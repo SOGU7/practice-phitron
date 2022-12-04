@@ -1,8 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int a,b;
-    scanf("%d %d",&a,&b);
-    printf("%d",a+b);
+    int x,y;
+    scanf("%d %d",&x,&y);
+    int *p,*q;
+    p=&x;
+    q=&y;
+    printf("%d",(*p+*q)/2);
     return 0;
 }
